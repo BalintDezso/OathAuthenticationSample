@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02AF52CDF04D7DAD9BD21B02 /* Pods_OathAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470383CD64347F7388E3CA90 /* Pods_OathAuthentication.framework */; };
+		684C9AC321A7EE0A0033F6D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AC221A7EE0A0033F6D4 /* AppDelegate.swift */; };
+		684C9AC521A7EE0A0033F6D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AC421A7EE0A0033F6D4 /* ViewController.swift */; };
+		684C9AC821A7EE0A0033F6D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684C9AC621A7EE0A0033F6D4 /* Main.storyboard */; };
+		684C9ACA21A7EE0B0033F6D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684C9AC921A7EE0B0033F6D4 /* Assets.xcassets */; };
+		684C9ACD21A7EE0B0033F6D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684C9ACB21A7EE0B0033F6D4 /* LaunchScreen.storyboard */; };
+		684C9AD721A7EF0A0033F6D4 /* NetworkRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AD421A7EF0A0033F6D4 /* NetworkRequestRetrier.swift */; };
+		684C9AD821A7EF0A0033F6D4 /* NetworkRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AD521A7EF0A0033F6D4 /* NetworkRequestAdapter.swift */; };
+		684C9AD921A7EF0A0033F6D4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AD621A7EF0A0033F6D4 /* Network.swift */; };
+		684C9ADB21A7EF220033F6D4 /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9ADA21A7EF220033F6D4 /* AuthenticationDelegate.swift */; };
+		684C9ADF21A7F6C70033F6D4 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9ADE21A7F6C70033F6D4 /* AuthenticationService.swift */; };
+		684C9AE121A7F7970033F6D4 /* AuthenticationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AE021A7F7970033F6D4 /* AuthenticationServiceDelegate.swift */; };
+		684C9AE321A7FA5E0033F6D4 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AE221A7FA5E0033F6D4 /* AuthenticationResponse.swift */; };
+		684C9AE521A7FA760033F6D4 /* TokenRefreshReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AE421A7FA760033F6D4 /* TokenRefreshReponse.swift */; };
+		684C9AEB21A7FFEA0033F6D4 /* UserCredentialRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AEA21A7FFEA0033F6D4 /* UserCredentialRequest.swift */; };
+		684C9AED21A8283C0033F6D4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AEC21A8283C0033F6D4 /* AccountViewController.swift */; };
+		684C9AEF21A829170033F6D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AEE21A829170033F6D4 /* TabBarController.swift */; };
+		684C9AF121A82C620033F6D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684C9AF021A82C620033F6D4 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		470383CD64347F7388E3CA90 /* Pods_OathAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OathAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684C9ABF21A7EE0A0033F6D4 /* OathAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OathAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		684C9AC221A7EE0A0033F6D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		684C9AC421A7EE0A0033F6D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		684C9AC721A7EE0A0033F6D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		684C9AC921A7EE0B0033F6D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		684C9ACC21A7EE0B0033F6D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		684C9ACE21A7EE0B0033F6D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684C9AD421A7EF0A0033F6D4 /* NetworkRequestRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestRetrier.swift; sourceTree = "<group>"; };
+		684C9AD521A7EF0A0033F6D4 /* NetworkRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestAdapter.swift; sourceTree = "<group>"; };
+		684C9AD621A7EF0A0033F6D4 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		684C9ADA21A7EF220033F6D4 /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
+		684C9ADE21A7F6C70033F6D4 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		684C9AE021A7F7970033F6D4 /* AuthenticationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceDelegate.swift; sourceTree = "<group>"; };
+		684C9AE221A7FA5E0033F6D4 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
+		684C9AE421A7FA760033F6D4 /* TokenRefreshReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefreshReponse.swift; sourceTree = "<group>"; };
+		684C9AEA21A7FFEA0033F6D4 /* UserCredentialRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialRequest.swift; sourceTree = "<group>"; };
+		684C9AEC21A8283C0033F6D4 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		684C9AEE21A829170033F6D4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		684C9AF021A82C620033F6D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1FEECD9A3C82F1862EE6CE1 /* Pods-OathAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OathAuthentication.release.xcconfig"; path = "Pods/Target Support Files/Pods-OathAuthentication/Pods-OathAuthentication.release.xcconfig"; sourceTree = "<group>"; };
+		F854153D3289E9226CA3F80E /* Pods-OathAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OathAuthentication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OathAuthentication/Pods-OathAuthentication.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		684C9ABC21A7EE0A0033F6D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02AF52CDF04D7DAD9BD21B02 /* Pods_OathAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6639B3754367CB73B1A95EDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F854153D3289E9226CA3F80E /* Pods-OathAuthentication.debug.xcconfig */,
+				A1FEECD9A3C82F1862EE6CE1 /* Pods-OathAuthentication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		684C9AB621A7EE0A0033F6D4 = {
+			isa = PBXGroup;
+			children = (
+				684C9AC121A7EE0A0033F6D4 /* OathAuthentication */,
+				684C9AC021A7EE0A0033F6D4 /* Products */,
+				6639B3754367CB73B1A95EDB /* Pods */,
+				E87150A44E09885316829854 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		684C9AC021A7EE0A0033F6D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684C9ABF21A7EE0A0033F6D4 /* OathAuthentication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684C9AC121A7EE0A0033F6D4 /* OathAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				684C9AE921A7FB8B0033F6D4 /* Service */,
+				684C9AE821A7FB7B0033F6D4 /* Network */,
+				684C9AC221A7EE0A0033F6D4 /* AppDelegate.swift */,
+				684C9AEC21A8283C0033F6D4 /* AccountViewController.swift */,
+				684C9AC421A7EE0A0033F6D4 /* ViewController.swift */,
+				684C9AEE21A829170033F6D4 /* TabBarController.swift */,
+				684C9AF021A82C620033F6D4 /* LoginViewController.swift */,
+				684C9AC621A7EE0A0033F6D4 /* Main.storyboard */,
+				684C9AC921A7EE0B0033F6D4 /* Assets.xcassets */,
+				684C9ACB21A7EE0B0033F6D4 /* LaunchScreen.storyboard */,
+				684C9ACE21A7EE0B0033F6D4 /* Info.plist */,
+			);
+			path = OathAuthentication;
+			sourceTree = "<group>";
+		};
+		684C9AE721A7FB640033F6D4 /* AuthenticationResponse */ = {
+			isa = PBXGroup;
+			children = (
+				684C9AE221A7FA5E0033F6D4 /* AuthenticationResponse.swift */,
+				684C9AE421A7FA760033F6D4 /* TokenRefreshReponse.swift */,
+			);
+			path = AuthenticationResponse;
+			sourceTree = "<group>";
+		};
+		684C9AE821A7FB7B0033F6D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				684C9AD621A7EF0A0033F6D4 /* Network.swift */,
+				684C9AD521A7EF0A0033F6D4 /* NetworkRequestAdapter.swift */,
+				684C9AD421A7EF0A0033F6D4 /* NetworkRequestRetrier.swift */,
+				684C9ADA21A7EF220033F6D4 /* AuthenticationDelegate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		684C9AE921A7FB8B0033F6D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				684C9AE721A7FB640033F6D4 /* AuthenticationResponse */,
+				684C9ADE21A7F6C70033F6D4 /* AuthenticationService.swift */,
+				684C9AE021A7F7970033F6D4 /* AuthenticationServiceDelegate.swift */,
+				684C9AEA21A7FFEA0033F6D4 /* UserCredentialRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E87150A44E09885316829854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				470383CD64347F7388E3CA90 /* Pods_OathAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684C9ABE21A7EE0A0033F6D4 /* OathAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684C9AD121A7EE0B0033F6D4 /* Build configuration list for PBXNativeTarget "OathAuthentication" */;
+			buildPhases = (
+				39191A1E57F0F0DE02654DD0 /* [CP] Check Pods Manifest.lock */,
+				684C9ABB21A7EE0A0033F6D4 /* Sources */,
+				684C9ABC21A7EE0A0033F6D4 /* Frameworks */,
+				684C9ABD21A7EE0A0033F6D4 /* Resources */,
+				92FE971D160F8532083933C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OathAuthentication;
+			productName = OathAuthentication;
+			productReference = 684C9ABF21A7EE0A0033F6D4 /* OathAuthentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		684C9AB721A7EE0A0033F6D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Balint Dezso";
+				TargetAttributes = {
+					684C9ABE21A7EE0A0033F6D4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 684C9ABA21A7EE0A0033F6D4 /* Build configuration list for PBXProject "OathAuthentication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 684C9AB621A7EE0A0033F6D4;
+			productRefGroup = 684C9AC021A7EE0A0033F6D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				684C9ABE21A7EE0A0033F6D4 /* OathAuthentication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		684C9ABD21A7EE0A0033F6D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684C9ACD21A7EE0B0033F6D4 /* LaunchScreen.storyboard in Resources */,
+				684C9ACA21A7EE0B0033F6D4 /* Assets.xcassets in Resources */,
+				684C9AC821A7EE0A0033F6D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39191A1E57F0F0DE02654DD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OathAuthentication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92FE971D160F8532083933C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OathAuthentication/Pods-OathAuthentication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OathAuthentication/Pods-OathAuthentication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		684C9ABB21A7EE0A0033F6D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684C9AF121A82C620033F6D4 /* LoginViewController.swift in Sources */,
+				684C9AD821A7EF0A0033F6D4 /* NetworkRequestAdapter.swift in Sources */,
+				684C9AEF21A829170033F6D4 /* TabBarController.swift in Sources */,
+				684C9AE321A7FA5E0033F6D4 /* AuthenticationResponse.swift in Sources */,
+				684C9AED21A8283C0033F6D4 /* AccountViewController.swift in Sources */,
+				684C9AD721A7EF0A0033F6D4 /* NetworkRequestRetrier.swift in Sources */,
+				684C9AE121A7F7970033F6D4 /* AuthenticationServiceDelegate.swift in Sources */,
+				684C9ADB21A7EF220033F6D4 /* AuthenticationDelegate.swift in Sources */,
+				684C9AC521A7EE0A0033F6D4 /* ViewController.swift in Sources */,
+				684C9AC321A7EE0A0033F6D4 /* AppDelegate.swift in Sources */,
+				684C9AEB21A7FFEA0033F6D4 /* UserCredentialRequest.swift in Sources */,
+				684C9AD921A7EF0A0033F6D4 /* Network.swift in Sources */,
+				684C9AE521A7FA760033F6D4 /* TokenRefreshReponse.swift in Sources */,
+				684C9ADF21A7F6C70033F6D4 /* AuthenticationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		684C9AC621A7EE0A0033F6D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684C9AC721A7EE0A0033F6D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		684C9ACB21A7EE0B0033F6D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684C9ACC21A7EE0B0033F6D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		684C9ACF21A7EE0B0033F6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		684C9AD021A7EE0B0033F6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		684C9AD221A7EE0B0033F6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F854153D3289E9226CA3F80E /* Pods-OathAuthentication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVZPBV2G42;
+				INFOPLIST_FILE = OathAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.balintdezso.OathAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		684C9AD321A7EE0B0033F6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1FEECD9A3C82F1862EE6CE1 /* Pods-OathAuthentication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVZPBV2G42;
+				INFOPLIST_FILE = OathAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.balintdezso.OathAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		684C9ABA21A7EE0A0033F6D4 /* Build configuration list for PBXProject "OathAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684C9ACF21A7EE0B0033F6D4 /* Debug */,
+				684C9AD021A7EE0B0033F6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684C9AD121A7EE0B0033F6D4 /* Build configuration list for PBXNativeTarget "OathAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684C9AD221A7EE0B0033F6D4 /* Debug */,
+				684C9AD321A7EE0B0033F6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 684C9AB721A7EE0A0033F6D4 /* Project object */;
+}
